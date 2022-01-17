@@ -1,0 +1,13 @@
+.foot {
+  height: 100px;
+  width: 70vw;
+  background-color: navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: paleturquoise;
+    vertical-align: middle;
+  }
+}

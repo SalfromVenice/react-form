@@ -1,11 +1,11 @@
 import React from "react";
 
 const Foot = () => {
-  retrun (
-    <div className="footer">
-
+  return (
+    <div className="foot">
+      <p>This is a footer</p>
     </div>
-  )
-}
+  );
+};
 
 export default Foot;

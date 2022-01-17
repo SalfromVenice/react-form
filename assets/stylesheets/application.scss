@@ -1,5 +1,11 @@
+@import "header" ;
+@import "foot";
+
+
 body {
   font-family: Helvetica;
+  background-color: paleturquoise;
+  color: darkslategray;
 }
 
 #root {
@@ -7,4 +13,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  input {
+    margin: 5px;
+  }
 }

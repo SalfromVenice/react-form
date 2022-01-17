@@ -1,8 +1,8 @@
 import React from "react";
 
-import Nav from "./Nav"
-import Form from "./Form"
-import Foot from "./Foot"
+import Nav from "./Nav";
+import Form from "./Form";
+import Foot from "./Foot";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Form />
       <Foot />
     </>
-  )
-}
+  );
+};
 
 export default App;
