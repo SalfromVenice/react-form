@@ -7,6 +7,7 @@ class Form extends Component {
       firstName: "",
       lastName: "",
       age: "",
+      gender: ""
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -45,11 +46,31 @@ class Form extends Component {
             value={this.state.age}
             onChange={this.handleChange}
           />
+          <br />
+          <h4>Gender:</h4>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              checked={this.state.gender === "male"}
+              onChange={this.handleChange}
+            /> Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked={this.state.gender === "female"}
+              onChange={this.handleChange}
+            /> Female
+          </label>
         </div>
         <div className="display">
           <h2>
             You are {this.state.firstName} {this.state.lastName}</h2>
-          <h2>{this.state.age} years old</h2>
+          <h2>{this.state.age} years old {this.state.gender === "male" && "boy"} {this.state.gender === "female" && "girl"}</h2>
         </div>
       </>
     );
